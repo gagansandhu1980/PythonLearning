@@ -1,6 +1,6 @@
 try:
-    temp_c = float(input("Enter temperature in Celsius: "))
-    temp_f = (temp_c * 9/5) + 32
-    print(f"{temp_c}C is {temp_f:.2f}F")
+    temp_f = float(input("Enter temperature in Fahrenheit: "))
+    temp_c = (temp_f - 32) * 5/9
+    print(f"{temp_f}F is {temp_c:.2f}C")
 except ValueError:
     print("Please enter a valid number.")
